@@ -1,0 +1,45 @@
+{
+  "name": "AER ROS 2 Jazzy Dev Container",
+  "image": "ros:jazzy-desktop",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/aer_ws,type=bind",
+  "workspaceFolder": "/workspace/aer_ws",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "python.analysis.extraPaths": [
+          "/opt/ros/jazzy/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_interfaces/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_perception/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_planning/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_control/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_safety/lib/python3.12/site-packages",
+          "/workspace/aer_ws/install/aer_stm32_bridge/lib/python3.12/site-packages"
+        ],
+        "C_Cpp.default.includePath": [
+          "/opt/ros/jazzy/include/**",
+          "${workspaceFolder}/src/**",
+          "${workspaceFolder}/install/**/include/**"
+        ],
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash",
+            "args": ["-c", "source /opt/ros/jazzy/setup.bash && [ -f /workspace/aer_ws/install/setup.bash ] && source /workspace/aer_ws/install/setup.bash; exec bash"]
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-iot.vscode-ros",
+        "redhat.vscode-xml",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y python3-colcon-common-extensions && chmod +x setup_environment.sh && ./setup_environment.sh",
+  "remoteUser": "root"
+}

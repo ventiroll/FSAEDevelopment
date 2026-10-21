@@ -1,0 +1,18 @@
+<package format="3">
+  <name>aer_bringup</name>
+  <version>1.0.0</version>
+  <description>Bringup package</description>
+  <maintainer email="mliu6758@sdsu.edu">AER CS Subteam</maintainer>
+  <license>BSD-3-Clause</license>
+  <depend>rclpy</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>aer_perception</depend>
+  <depend>aer_planning</depend>
+  <depend>aer_control</depend>
+  <depend>aer_safety</depend>
+  <depend>aer_stm32_bridge</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

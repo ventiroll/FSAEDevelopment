@@ -1,0 +1,5 @@
+std_msgs/Header header
+float32 steering_angle_rad
+float32 target_velocity_mps
+float32 target_brake_pressure_bar
+bool emergency_stop

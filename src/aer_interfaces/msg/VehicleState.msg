@@ -1,0 +1,5 @@
+std_msgs/Header header
+float32 current_speed_mps
+float32 current_steering_angle_rad
+float32 brake_pressure_bar
+uint8 dssi_state
