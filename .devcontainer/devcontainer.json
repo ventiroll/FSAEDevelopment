@@ -1,6 +1,6 @@
 {
   "name": "AER ROS 2 Jazzy Dev Container",
-  "image": "ros:jazzy-desktop",
+  "image": "osrf/ros:jazzy-desktop",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/aer_ws,type=bind",
   "workspaceFolder": "/workspace/aer_ws",
   "customizations": {
