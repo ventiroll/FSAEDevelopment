@@ -17,6 +17,7 @@ setup(
     entry_points={
         'console_scripts': [
             'safety_monitor_node = aer_safety.safety_monitor_node:main',
+            'mock_cone_publisher = aer_safety.mock_cone_publisher:main',
         ],
     },
 )
