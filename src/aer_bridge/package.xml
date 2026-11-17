@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aer_bridge</name>
+  <version>1.0.0</version>
+  <description>Hardware UART bridge node to STM32</description>
+  <maintainer email="aer@sdsu.edu">SDSU AER</maintainer>
+  <license>BSD-3-Clause</license>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

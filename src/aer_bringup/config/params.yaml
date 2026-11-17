@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    stale_data_timeout_sec: 0.200
+    target_speed_mps: 3.0
+    max_steering_angle_rad: 0.436

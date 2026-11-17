@@ -1,0 +1,36 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/workspace/aer_ws/build/aer_sync",
+        "/workspace/aer_ws/install/aer_sync/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_safety",
+        "/workspace/aer_ws/install/aer_safety/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_planning",
+        "/workspace/aer_ws/install/aer_planning/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_perception",
+        "/workspace/aer_ws/install/aer_perception/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_drivers",
+        "/workspace/aer_ws/install/aer_drivers/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_bringup",
+        "/workspace/aer_ws/install/aer_bringup/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_bridge",
+        "/workspace/aer_ws/install/aer_bridge/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/workspace/aer_ws/build/aer_sync",
+        "/workspace/aer_ws/install/aer_sync/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_safety",
+        "/workspace/aer_ws/install/aer_safety/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_planning",
+        "/workspace/aer_ws/install/aer_planning/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_perception",
+        "/workspace/aer_ws/install/aer_perception/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_drivers",
+        "/workspace/aer_ws/install/aer_drivers/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_bringup",
+        "/workspace/aer_ws/install/aer_bringup/lib/python3.12/site-packages",
+        "/workspace/aer_ws/build/aer_bridge",
+        "/workspace/aer_ws/install/aer_bridge/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

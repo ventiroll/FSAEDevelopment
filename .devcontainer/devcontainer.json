@@ -1,0 +1,22 @@
+{
+  "name": "AER ROS 2 Jazzy Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace/aer_ws",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/aer_ws,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-iot.vscode-ros"
+      ]
+    }
+  },
+  "runArgs": [
+    "--net=host",
+    "--privileged"
+  ],
+  "postCreateCommand": "bash ./setup_environment.sh"
+}
