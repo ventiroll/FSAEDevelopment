@@ -1,0 +1,5 @@
+demo_inverter_node:
+  ros__parameters:
+    throttle_mode: medium
+    publish_rate_hz: 10.0
+    target_speed_mps: -1.0
